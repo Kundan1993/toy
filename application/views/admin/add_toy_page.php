@@ -31,52 +31,18 @@
                                 data-target="#addDepartment"><b><i class="fa fa-plus"></i> Department</b></button>
                         </div>
                         
-                        <div class="card-body">
-                           
-                        </div>
-                        </div>
+                            <div class="card-body">
+                            
                     </div>
                 </div>
             </main>
                                             
-            <!-- Department update and view  -->
-            <div id="VU_department" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
-                class="modal fade text-left">
-                <div role="document" class="modal-dialog  modal-md">
-                    <div class="modal-content " style=" border-radius: 7px !important; ">
-                        <div id="mod-content"></div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- Update and view Department -->
-            <!-- Delete Confirm popup -->
-            <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            Are you sure want to delete this record?
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary btn-sm btn-ok">Delete</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Delete Confirm popup end -->
+           
             <?php include("common/footer.php"); ?>
         </div>
     </div>
     <?php include("common/script.php"); ?>
-    <script>
-    $('#confirm-delete').on('show.bs.modal', function(e) {
-        $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
-    });
-
-    </script>
+    
 </body>
 
 </html>
